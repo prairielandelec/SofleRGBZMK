@@ -19,6 +19,10 @@
     chain-length = <36>;
 };
 
+&sensors {
+    triggers-per-rotation = <24>;
+};
+
 / {
 
    // Activate ADJUST layer by pressing raise and lower
