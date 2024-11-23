@@ -45,7 +45,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&hl_ts RAISE L_SHIFT>, <&kp CAPSLOCK>;
+            bindings = <&hl_ts RAISE LSHIFT>, <&kp CAPSLOCK>;
         };
     };
 
