@@ -32,11 +32,20 @@
     };
 
     behaviors {
+        hl_ts: hold_layer_tap_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <135>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&mo RAISE>, <&sk LSHIFT>;
+        };
+
         td_mt: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&lt RAISE &sk LSHIFT >, <&kp CAPSLOCK>;
+            bindings = <&hl_ts>, <&kp CAPSLOCK>;
         };
     };
 
