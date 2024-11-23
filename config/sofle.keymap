@@ -44,7 +44,7 @@
         td_mt: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <75>;
+            tapping-term-ms = <110>;
             bindings = <&hl_ts RAISE LSHIFT>, <&kp CAPSLOCK>;
         };
     };
